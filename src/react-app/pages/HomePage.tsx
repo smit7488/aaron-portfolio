@@ -1,0 +1,254 @@
+import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+import MediaHero from "../components/MediaHero";
+import laylaImage from "../assets/media/layla.jpg";
+import picoImage from "../assets/media/pico.jpg";
+import plitviceImage from "../assets/media/plitvice.jpg";
+import climb2Image from "../assets/media/rock-climbing-2.jpg";
+import volleyballImage from "../assets/media/volleyball.jpg";
+import mauiImage from "../assets/media/maui.jpg";
+import redRocksImage from "../assets/media/red-rocks.jpg";
+import romeImage from "../assets/media/rome.jpg";
+import ProjectsGrid from "../components/ProjectsGrid";
+import CallToAction from "../components/CallToAction";
+import { FaCode, FaComments, FaUsers, FaClipboardList, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import WaveGradientBackground from "../components/WaveGradientBackground";
+import SkillsSection from "../components/SkillsSection";
+import { motion} from "framer-motion";
+import { slideInLeft, slideInRight, staggerItem, staggerContainer} from "../animations/motionVariants";  
+
+
+export default function HomePage() {
+  const values = [
+    {
+      title: "Code & Development",
+      text: `I build websites and apps that actually work—scalable, maintainable, and designed to solve real problems. I'm comfortable across front-end and back-end technologies, and I use modern frameworks and tools to keep things efficient and future-proof.`,
+      icon: FaCode,
+    },
+    {
+      title: "Communication & Client Focus",
+      text: `I make technical concepts easy to understand and focus on what clients actually need. Clear, direct communication and building trust are key to keeping projects on track.`,
+      icon: FaComments,
+    },
+    {
+      title: "Teamwork & Collaboration",
+      text: `I work best in collaborative environments where ideas flow freely. Using agile practices and the right tools, I help teams stay coordinated, solve problems together, and get things done without unnecessary friction.`,
+      icon: FaUsers,
+    },
+    {
+      title: "Systems & Organization",
+      text: `I like keeping things organized. From managing tasks to setting up clear workflows, I make sure projects stay on track and deadlines are realistic—whether I'm working solo or with a team.`,
+      icon: FaClipboardList,
+    },
+  ];
+
+  const MotionCol = motion.create(Col);
+
+  return (
+    <>
+      {/* Hero */}
+      <MediaHero
+
+
+        overlayContent={
+          <Container>
+            <Row className="align-items-center py-5">
+              <Col lg={8} md={6}>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={slideInLeft}
+              >
+                <h1 className="main-heading text-start text-light mb-4">Hi! I'm Trevor.</h1>
+                <p className="no-pad hero-paragraph mb-4 text-light">
+                  I'm a <strong>web designer and developer</strong> based in Rochester, NY, who loves bringing ideas to life on the web. I actually started out in graphic design, but once I got a taste of coding, I was hooked.
+                </p>
+                <p className="no-pad hero-paragraph mb-4 text-light">
+                  I'm <strong>completely self-taught</strong> and still love learning new things every day—whether it's experimenting with a new layout, optimizing a site for performance, or figuring out how to make something just feel right for users. Along the way, I also picked up a passion for <strong>photography and videography</strong>, which gives me another creative outlet and often inspires how I approach visual design.
+                </p>
+                <p className="no-pad hero-paragraph mb-4 text-light">
+                  My work is all about blending creativity with clean, practical design and a strong focus on user experience.
+                </p>
+                </motion.div>
+
+
+              </Col>
+
+              <Col lg={4} md={6} className="text-center">
+               <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={slideInRight}
+              >
+                <img
+                  src="/images/trevor-headshot.avif"
+                  alt="Trevor at a wedding"
+                  className="img-fluid rounded"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                </motion.div>
+              </Col>
+            </Row>
+          </Container>
+        }
+        background={<WaveGradientBackground />}
+        bgColor="var(--color-dark-bg)"
+
+      />
+
+      {/* Intro Section */}
+      <section className="py-5 bg-white">
+        <Container>
+          <Row className="align-items-center row-gap-4">
+            {/* Left Image */}
+            <Col sm={6} md={4}>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={slideInLeft}
+                style={{
+                  aspectRatio: "1 / 1",
+                  overflow: "hidden",
+                  borderRadius: "0.5rem",
+                  boxShadow: "0 0.25rem 1rem rgba(0,0,0,0.1)",
+                }}
+              >
+                <Carousel
+                  controls={false}
+                  indicators={false}
+                  interval={3000}
+                  pause={false}
+                  slide={true}
+                  fade={true}
+                >
+                  {[
+                    romeImage,
+                    laylaImage,
+                    picoImage,
+                    plitviceImage,
+                    climb2Image,
+                    volleyballImage,
+                    mauiImage,
+                    redRocksImage
+
+                  ].map((imgSrc, index) => (
+                    <Carousel.Item key={index}>
+                      <img
+                        className="d-block w-100 h-100"
+                        src={imgSrc}
+                        alt={`Photo ${index + 1}`}
+                        style={{ objectFit: "cover" }}
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+              </motion.div>
+            </Col>
+
+            {/* Right Text */}
+            <Col sm={6} md={8}>
+             <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={slideInRight}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+              <h2 className="mb-4 text-4xl">Work Hard, Play Hard</h2>
+              <p>
+                When I'm not building websites or designing, you'll usually find me staying active—hitting the gym, hiking, rock climbing, or playing volleyball. I also run a creative video and photo business with my girlfriend at <a
+                  href="https://tsfilmphoto.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                ><strong style={{whiteSpace: 'nowrap'}}>tsfilmphoto.com&nbsp;<FaArrowUpRightFromSquare size={14} style={{ verticalAlign: 'baseline' }} /></strong></a> , often with my dog Layla by our side. For me, life's about staying healthy, exploring new places, and making the most of every day.
+              </p>
+              </motion.div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* values Section */}
+      <section className="py-5 bg-light-100 border-top">
+    {/* Staggered container */}
+      <Container>
+      <motion.div
+  variants={staggerContainer}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }} // triggers when 20% of container is in viewport
+>
+          <Row className="g-4">
+            {values.map((value, index) => (
+               <MotionCol
+                            key={index}
+                            md={6}
+                            sm={6}
+                            variants={staggerItem} // each card animates in sequence
+                          >
+                
+                <Card className="h-100 shadow-sm gradient-border rounded-2">
+                  <Card.Body>
+                    <value.icon size={32} className="mb-3 " style={{ color: "var(--brand-gradient-middle)" }} />
+                    <Card.Title><h4>{value.title}</h4></Card.Title>
+                    <Card.Text>{value.text}</Card.Text>
+                  </Card.Body>
+                </Card>
+               
+              </MotionCol>
+            ))}
+    
+          </Row>
+      </motion.div>
+      </Container>
+      </section>
+
+      <CallToAction
+        heading="Interested in Working Together?"
+        bgColor="var(--color-dark-bg)"
+        textColor="white"
+        buttonText="Get in Touch"
+        buttonLink="/contact"
+        className="border-top border-bottom shadow-sm z-2"
+        useWaveGradient={true}
+        hasContainer={false}
+      />
+
+      <div id="projects"></div>
+
+      {/* Web Projects Grid */}
+      <section className="py-5 bg-light-50 border-bottom shadow-sm z-2" id="web">
+        <Container>
+          <h2 className="text-center text-4xl">Web Projects</h2>
+          <div className="gradient-bg"></div>
+          </Container>
+          <ProjectsGrid category="Web" /> 
+      </section>
+
+      {/* Creative Projects Grid */}
+      <section className="py-5 bg-light-100" id="creative">
+        <Container>
+          <h2 className="text-center text-4xl" >Creative Projects</h2>
+          </Container>
+          <ProjectsGrid category="Creative" />
+      </section>
+
+      <SkillsSection />
+
+      <CallToAction
+        heading="Want to Learn More About Me?"
+        bgColor="var(--color-dark-bg)"
+        textColor="white"
+        buttonText="Reach Out"
+        buttonLink="/contact"
+        className="shadow-sm z-2"
+        useWaveGradient={true}
+
+      />
+    </>
+  );
+}

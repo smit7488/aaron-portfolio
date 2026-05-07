@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import MediaHero from "../components/MediaHero";
 import ProjectsGrid from "../components/ProjectsGrid";

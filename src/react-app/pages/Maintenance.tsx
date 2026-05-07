@@ -1,5 +1,5 @@
 import MediaHero from "../components/MediaHero";
-import tsLogo from "../assets/media/trevor-smith-logo-vertical-ko.svg";
+import tsLogo from "../assets/media/amk-logo-vertical-ko.svg";
 import WaveGradientBackground from "../components/WaveGradientBackground";
 
 
@@ -17,7 +17,7 @@ export default function Maintenance() {
             <img
               src={tsLogo}
               className="logo image-fluid"
-              alt="Trevor & Sarah logo"
+              alt="AMK Logo"
             />
             <p
               className="text-uppercase mt-4 text-center"

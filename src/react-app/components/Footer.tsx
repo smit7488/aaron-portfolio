@@ -1,17 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import tsLogo from "../assets/media/trevor-smith-logo-vertical-ko-color.svg";
+import amkLogo from "../assets/media/amk-logo-vertical-ko.svg";
 import {
-
-  FaGithub,
   FaLinkedin,
   FaFilePdf,
   FaEnvelope,
-  FaReact
 } from "react-icons/fa";
 import "./Footer.css";
-import resumePdf from "../assets/resume/Trevor-Smith-Resume.pdf";
+import resumePdf from "../assets/resume/Aaron-Kruger-Resume.pdf";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -22,8 +19,8 @@ const Footer: React.FC = () => {
         {/* Bottom Row: Logo, Location, Copyright, Socials */}
         <Row className="align-items-center my-3 text-center gap-2">
           <Image
-            src={tsLogo}
-            alt="Trevor Smith - Web Developer"
+            src={amkLogo}
+            alt="Aaron Kruger Logo"
             style={{ maxHeight: 80 }}
             className="mb-2 mx-auto"
           />
@@ -31,31 +28,18 @@ const Footer: React.FC = () => {
           <Col className="d-flex flex-wrap flex-row justify-content-center col-12 my-3 gap-2">
           
             <div className="footer-link">
-              <span>© {currentYear} Trevor Smith.</span>
+              <span>© {currentYear} Aaron Kruger.</span>
             </div>
-              <div className="footer-link d-flex align-items-center">
-                <span>Built with React </span>
-              <FaReact className="ms-1" size={16} />
-              
-            </div>
+            
           </Col>
 
           <Col className="d-flex justify-content-center col-12">
             <div className="social-icons d-flex gap-3">
-              {/* GitHub */}
-              <a
-                href="https://github.com/smit7488"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon"
-              >
-                <FaGithub size={22} />
-              </a>
+       
 
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/in/trevorgsmith95/"
+                href="https://www.linkedin.com/in/aaron-kruger-904894296/"
                 title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -20,9 +20,17 @@ interface WaveGradientBackgroundProps {
 
 const DEFAULTS = {
   colors: [
-    "#040614", "#05061a", "#07072e", "#090843", "#0c0a57",
-    "#0e0b6b", "#11107f", "#141293", "#1714a8", "#1a16bc",
-  ],
+  "#050001",
+  "#0b0102",
+  "#140204",
+  "#1d0406",
+  "#29070a",
+  "#36090e",
+  "#4a0005",
+  "#5c0d13",
+  "#732127",
+  "#8a383e"
+],
   speed: 1.25,
   amplitude: 320,
   density: [0.06, 0.16] as [number, number],

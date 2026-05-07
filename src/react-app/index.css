@@ -11,104 +11,191 @@
   /* Transition */
   --transition-base: 300ms ease-in-out;
 
-  /*
-  |=================================
-  | Brand / Colors
-  |=================================
-  | Palette: #AAB4C3 (Light Blue/Gray), #29304a (Dark Navy), #040614 (Deepest Navy/Black),
-  | #2020b3 (Bright Blue), #2f8be9 (Sky Blue)
-  */
-  --bs-primary: #2f8be9;
-  --bs-primary-hover: #2020b3;
-  --bs-secondary: #AAB4C3;
-  --bs-secondary-hover: #909bb0;
-  --bs-success: #00a854;
-  --bs-success-hover: #008744;
-  --bs-info: #AAB4C3;
-  --bs-warning: #ffb700;
-  --bs-warning-hover: #d19700;
-  --bs-danger: #e92f2f;
-  --bs-danger-hover: #b32020;
-  --bs-light: #AAB4C3;
-  --bs-dark: #29304a;
+/*
+|=================================
+| Brand / Colors
+|=================================
+| Palette: Deep Crimson / Wine
+| Core Colors:
+| #89000a (Primary Crimson)
+| #a1333b (Muted Wine Red)
+| #140204 (Deepest Background)
+| #f4eef0 (Soft Off White)
+*/
 
-  /* Brand Gradient */
-  --brand-gradient-start: #2020b3;
-  --brand-gradient-end: #2f8be9;
-  --brand-gradient-middle: #285fd0;
-  --brand-gradient: linear-gradient(135deg, var(--brand-gradient-start) 0%, var(--brand-gradient-end) 100%);
-  --brand-gradient-hover-start: #1a1a99;
-  --brand-gradient-hover-end: #2670c2;
-  --brand-gradient-hover: linear-gradient(135deg, var(--brand-gradient-hover-start) 0%, var(--brand-gradient-hover-end) 100%);
+--bs-primary: #a1333b;
+--bs-primary-hover: #89000a;
+--bs-secondary: #c8b5b8;
+--bs-secondary-hover: #ad989c;
 
-  /* Base Text / Background */
-  --color-text: #040614;
-  --color-text-light: #fff;
-  --color-bg: #f6f7fa;
-  --color-dark-bg: #040614;
-  --color-accent: var(--bs-primary);
-  --color-accent-hover: var(--bs-primary-hover);
+--bs-success: #1f8a5b;
+--bs-success-hover: #176947;
 
-  /* Buttons */
-  --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-primary);
-  --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-primary-hover);
-  --bs-btn-hover-border-color: var(--bs-primary-hover);
-  --bs-btn-focus-shadow-rgb: 87, 169, 245;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2020b3;
-  --bs-btn-active-border-color: #2020b3;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
-  --bs-btn-disabled-color: #AAB4C3;
-  --bs-btn-disabled-bg: #29304a;
-  --bs-btn-disabled-border-color: #29304a;
+--bs-info: #c8b5b8;
 
-  /* Additional semantic colors (full scales) */
-  /* Primary */
-  --primary-50: #e8f3fe; --primary-100: #d1e7fd; --primary-200: #a4cffb; --primary-300: #78b8f8;
-  --primary-400: #499ef1; --primary-500: #2f8be9; --primary-600: #1b6fdc; --primary-700: #1459c3;
-  --primary-800: #0f43a5; --primary-900: #0a2e7c;
+--bs-warning: #d9a21b;
+--bs-warning-hover: #b18112;
 
-  /* Secondary */
-  --secondary-50: #f6f7fa; --secondary-100: #e3e6ec; --secondary-200: #c9cfd9; --secondary-300: #aab4c3;
-  --secondary-400: #8b97ac; --secondary-500: #6f7c93; --secondary-600: #576378; --secondary-700: #424c5b;
-  --secondary-800: #2f3540; --secondary-900: #1d212a;
+--bs-danger: #c11f2b;
+--bs-danger-hover: #970f19;
 
-  /* Success */
-  --success-50: #e5f6ed; --success-100: #b3e3c5; --success-200: #80cf9d; --success-300: #4cbb75;
-  --success-400: #1f9e57; --success-500: #00a854; --success-600: #008744; --success-700: #006b36;
-  --success-800: #005027; --success-900: #003218;
+--bs-light: #f4eef0;
+--bs-dark: #140204;
 
-  /* Info (reuses secondary scale) */
-  --info-50: #f6f7fa; --info-100: #e3e6ec; --info-200: #c9cfd9; --info-300: #aab4c3;
-  --info-400: #8b97ac; --info-500: #6f7c93; --info-600: #576378; --info-700: #424c5b;
-  --info-800: #2f3540; --info-900: #1d212a;
+/* Brand Gradient */
+--brand-gradient-start: #89000a;
+--brand-gradient-middle: #962028;
+--brand-gradient-end: #a1333b;
 
-  /* Warning */
-  --warning-50: #fff9e5; --warning-100: #fff0b3; --warning-200: #ffe680; --warning-300: #ffda4c;
-  --warning-400: #ffc91a; --warning-500: #ffb700; --warning-600: #d19700; --warning-700: #a57800;
-  --warning-800: #7b5b00; --warning-900: #4f3a00;
+--brand-gradient: linear-gradient(
+  135deg,
+  var(--brand-gradient-start) 0%,
+  var(--brand-gradient-end) 100%
+);
 
-  /* Danger */
-  --danger-50: #fde8e8; --danger-100: #fbd1d1; --danger-200: #f8a4a4; --danger-300: #f37777;
-  --danger-400: #ed4d4d; --danger-500: #e92f2f; --danger-600: #b32020; --danger-700: #931a1a;
-  --danger-800: #711414; --danger-900: #4c0d0d;
+--brand-gradient-hover-start: #6d0008;
+--brand-gradient-hover-end: #84262d;
 
-  /* Neutral / Light / Dark */
-  --light: #AAB4C3;
-  --light-50: #ffffff; --light-100: #f6f7fa; --light-200: #e3e6ec; --light-300: #c9cfd9; --light-400: #aab4c3;
-  --dark: #29304a; --dark-50: #3a4261; --dark-100: #4b5478; --dark-200: #5d668f; --dark-300: #717baa; --dark-400: #8893c5;
+--brand-gradient-hover: linear-gradient(
+  135deg,
+  var(--brand-gradient-hover-start) 0%,
+  var(--brand-gradient-hover-end) 100%
+);
 
-  /* Misc (used by custom buttons) */
-  --color-button-primary: var(--bs-primary);
-  --color-button-primary-hover: var(--bs-primary-hover);
-  --color-button-secondary: var(--bs-secondary);
-  --color-button-secondary-hover: var(--bs-secondary-hover);
-  --color-accent-salmon: #f08a7b; /* fallback accent used by outline-secondary */
+/* Base Text / Background */
+--color-text: #140204;
+--color-text-light: #ffffff;
+
+--color-bg: #f7f3f4;
+--color-dark-bg: #140204;
+
+--color-accent: var(--bs-primary);
+--color-accent-hover: var(--bs-primary-hover);
+
+/* Buttons */
+--bs-btn-color: #ffffff;
+--bs-btn-bg: var(--bs-primary);
+--bs-btn-border-color: var(--bs-primary);
+
+--bs-btn-hover-color: #ffffff;
+--bs-btn-hover-bg: var(--bs-primary-hover);
+--bs-btn-hover-border-color: var(--bs-primary-hover);
+
+--bs-btn-focus-shadow-rgb: 161, 51, 59;
+
+--bs-btn-active-color: #ffffff;
+--bs-btn-active-bg: #89000a;
+--bs-btn-active-border-color: #89000a;
+
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+
+--bs-btn-disabled-color: #c8b5b8;
+--bs-btn-disabled-bg: #3a0b10;
+--bs-btn-disabled-border-color: #3a0b10;
+
+/* =================================
+| Additional semantic colors
+|================================= */
+
+/* Primary */
+--primary-50: #f8ecee;
+--primary-100: #f0d7da;
+--primary-200: #ddb0b5;
+--primary-300: #ca888f;
+--primary-400: #b86069;
+--primary-500: #a1333b;
+--primary-600: #89000a;
+--primary-700: #6d0008;
+--primary-800: #520006;
+--primary-900: #360004;
+
+/* Secondary */
+--secondary-50: #faf7f8;
+--secondary-100: #f0e7e9;
+--secondary-200: #ddd0d3;
+--secondary-300: #c8b5b8;
+--secondary-400: #ad989c;
+--secondary-500: #927d82;
+--secondary-600: #766367;
+--secondary-700: #5c4b4f;
+--secondary-800: #433639;
+--secondary-900: #2c2325;
+
+/* Success */
+--success-50: #e8f7ef;
+--success-100: #c1e8d1;
+--success-200: #98d8b3;
+--success-300: #6fc894;
+--success-400: #42ad73;
+--success-500: #1f8a5b;
+--success-600: #176947;
+--success-700: #104d35;
+--success-800: #0a3323;
+--success-900: #041a11;
+
+/* Info */
+--info-50: #faf7f8;
+--info-100: #f0e7e9;
+--info-200: #ddd0d3;
+--info-300: #c8b5b8;
+--info-400: #ad989c;
+--info-500: #927d82;
+--info-600: #766367;
+--info-700: #5c4b4f;
+--info-800: #433639;
+--info-900: #2c2325;
+
+/* Warning */
+--warning-50: #fff8e7;
+--warning-100: #ffefc2;
+--warning-200: #ffe39a;
+--warning-300: #ffd56f;
+--warning-400: #e9bb3f;
+--warning-500: #d9a21b;
+--warning-600: #b18112;
+--warning-700: #8a620b;
+--warning-800: #634607;
+--warning-900: #3d2b03;
+
+/* Danger */
+--danger-50: #fdecee;
+--danger-100: #f9d4d8;
+--danger-200: #f2aab1;
+--danger-300: #ea7f89;
+--danger-400: #dc4d5b;
+--danger-500: #c11f2b;
+--danger-600: #970f19;
+--danger-700: #750b13;
+--danger-800: #53070d;
+--danger-900: #320407;
+
+/* Neutral / Light / Dark */
+--light: #f2f1f1;
+
+--light-50: #ffffff;
+--light-100: #f7f6f6;
+--light-200: #eceaea;
+--light-300: #d8d4d5;
+--light-400: #bdb7b8;
+
+/* Dark Neutrals */
+--dark: #090909;
+
+--dark-50: #141313;
+--dark-100: #1f1d1e;
+--dark-200: #2b2829;
+--dark-300: #373233;
+--dark-400: #433d3e;
+
+/* Misc */
+--color-button-primary: var(--bs-primary);
+--color-button-primary-hover: var(--bs-primary-hover);
+
+--color-button-secondary: var(--bs-secondary);
+--color-button-secondary-hover: var(--bs-secondary-hover);
+
+--color-accent-salmon: #c96a72;
 }
-
 /* ==============================
   Resets & Base Layout
   ============================== */

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from 'react-icons/fa';
-import TsLogo from "../assets/media/trevor-smith-logo-horizontal.svg";
-import resumePdf from "../assets/resume/Trevor-Smith-Resume.pdf";
+import { FaLinkedin, FaFilePdf, FaEnvelope } from 'react-icons/fa';
+import amkLogo from "../assets/media/amk-logo.svg";
+import resumePdf from "../assets/resume/Aaron-Kruger-Resume.pdf";
 import "./Navigation.css";
 
 // Define a size for the icons for consistency
@@ -63,9 +63,9 @@ const Navigation: React.FC = () => {
           }`}
         >
           <img
-            src={TsLogo}
-            alt="Trevor Smith"
-            height={40}
+            src={amkLogo}
+            alt="Aaron Kruger"
+            height={36}
             className="d-inline-block align-text-top"
           />
         </Navbar.Brand>
@@ -81,41 +81,25 @@ const Navigation: React.FC = () => {
            
             <Nav.Link
               as={Link}
-              to={{ pathname: "/", hash: "#web" }} 
-              onClick={() => handleAnchorClick("#web")} // Pass the hash to the new handler
+              to={{ pathname: "/", hash: "#projects" }} 
+              onClick={() => handleAnchorClick("#projects")} // Pass the hash to the new handler
               className={`nav-anchors`} 
             >
-              Web
+              My Projects
             </Nav.Link>
             
-            <Nav.Link
-              as={Link}
-              to={{ pathname: "/", hash: "#creative" }}
-              onClick={() => handleAnchorClick("#creative")} // Pass the hash to the new handler
-              className={`nav-anchors`}
-            >
-              Creative
-            </Nav.Link>
+         
 
           </Nav>
 
           {/* Right-aligned icons  */}
           <Nav className="nav-bottom d-flex gap-3 align-items-center my-2 my-lg-0 flex-row justify-content-center">
             {/* GitHub Icon */}
-            <Nav.Link
-              href="https://github.com/smit7488"
-              title="GitHub"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              className="icon-link p-0"
-            >
-              <FaGithub size={ICON_SIZE} />
-            </Nav.Link>
+         
             
             {/* LinkedIn Icon */}
             <Nav.Link
-              href="https://www.linkedin.com/in/trevorgsmith95/"
+              href="https://www.linkedin.com/in/aaron-kruger-904894296/"
               title="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 175 130.6">
-  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
-  <defs>
-    <style>
-      .st0 {
-        fill: url(#linear-gradient);
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="42.77" y1="1082.47" x2="129.17" y2="932.77" gradientTransform="translate(0 -948)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2020b3"/>
-      <stop offset="1" stop-color="#2f8be9"/>
-    </linearGradient>
-  </defs>
-  <g id="Layer_1-2">
-    <path class="st0" d="M70.2,6.8L86.7,0l-41.1,99.2,82.7-34.2-6.8,16.5L22.2,122.6l27.4-66.1L0,77l6.8-16.5,49.6-20.5,13.7-33.1h0l.1-.1ZM69,130.6l71.8-29.7,34.2-82.7-82.7,34.2,6.8-16.5L168.2,7.3l-16.5-6.8-62.1,25.7-20.5,49.6,82.7-34.3-20.6,49.6-78.7,32.6,16.5,6.8v.1Z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 358.9412 358.9412" width="358.9412" height="358.9412"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><rect width="358.9412" height="358.9412" style="fill:#a1333b;"></rect><path d="M238.5947,118.4781h-25.4199l-36.26,51.56-1.8201-2.59-34.3899-48.97h-29.77l4.01,5.79.99,1.41,24.6399,35.43,2.3301,3.3,1.4399,2.07,31.9102,45.85,15.21-21.57,2.48-3.52c6.08-8.6,12.1599-17.53,17.86-26.13h.34c-.1699,8.93-.34,20.38-.34,30.51v48.86h.0044v.0049s26.7899,0,26.7899,0v-122.0012h-.0044v-.0038Z" style="fill:#fff;"></path><polygon points="273.2012 176.7551 320.414 118.4625 288.9113 118.4625 242.4426 177.1273 245.2538 180.8066 257.1603 196.558 290.3995 240.4634 323.2667 240.4634 273.2012 176.7551" style="fill:#fff;"></polygon><path d="M117.2993,152.5286l-13.6428-34.066h-2.0735l.0017-.0044h-25.21l-.0017.0044h-.0027l-48.8663,122.0009h.0027l-.0018.0046h27.45l9.7988-25.6367h39.3989l-4.5476-21.0433h-26.8302l15.13-39.56c.0071-.0192.0134-.0375.0205-.0568l1.8813-4.8676h.2069l33.8594,91.1597h28.6501l-9.4675-23.6476-25.7562-64.2872Z" style="fill:#fff;"></path></svg>

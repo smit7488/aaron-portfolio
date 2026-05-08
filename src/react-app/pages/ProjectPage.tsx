@@ -41,7 +41,7 @@ export default function ProjectPage() {
     async function fetchData() {
       try {
         const res = await fetch(
-          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?access_token=${ACCESS_TOKEN}&content_type=projectDetails&fields.slug=${slug}&include=2`
+          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?access_token=${ACCESS_TOKEN}&content_type=project&fields.slug=${slug}&include=2`
         );
         const data = await res.json();
 

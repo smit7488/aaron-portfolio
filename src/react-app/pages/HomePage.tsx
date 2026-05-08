@@ -130,13 +130,13 @@ export default function HomePage() {
 
       <div id="projects"></div>
 
-      {/* Web Projects Grid */}
-      <section className="py-5 bg-light-50 border-bottom shadow-sm z-2" id="web">
+      {/* Mechanical Projects Grid */}
+      <section className="py-5 bg-light-50 border-bottom shadow-sm z-2" id="mechanical">
         <Container>
-          <h2 className="text-center text-4xl">Web Projects</h2>
+          <h2 className="text-center text-4xl">Mechanical Projects</h2>
           <div className="gradient-bg"></div>
           </Container>
-          <ProjectsGrid category="Web" /> 
+          <ProjectsGrid category="Mechanical" /> 
       </section>
 
       <SkillsSection />

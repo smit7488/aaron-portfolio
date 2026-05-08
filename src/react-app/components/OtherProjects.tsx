@@ -26,7 +26,7 @@ export default function OtherProjects({ excludeSlug }: { excludeSlug: string }) 
     async function fetchAllProjects() {
       try {
         const res = await fetch(
-          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?access_token=${ACCESS_TOKEN}&content_type=projectDetails&select=fields.name,fields.slug,fields.category,fields.dateCompleted,fields.summary,fields.mainProjectThumbnail&include=1&limit=100` // Increased limit to get all projects
+          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?access_token=${ACCESS_TOKEN}&content_type=project&select=fields.name,fields.slug,fields.category,fields.dateCompleted,fields.summary,fields.mainProjectThumbnail&include=1&limit=100` // Increased limit to get all projects
         );
         const data = await res.json();
 

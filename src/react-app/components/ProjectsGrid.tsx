@@ -23,7 +23,7 @@ interface Project {
 }
 
 interface ProjectsGridProps {
-  category: "Web" | "Creative";
+  category: "Aerospace" | "Mechanical";
 }
 
 const SPACE_ID = import.meta.env.VITE_CONTENTFUL_SPACE_ID;
@@ -37,7 +37,7 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ category }) => {
     const fetchProjects = async () => {
       try {
         const res = await fetch(
-          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?content_type=projectDetails&include=1`,
+          `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?content_type=project&include=1`,
           {
             headers: { Authorization: `Bearer ${ACCESS_TOKEN}` },
           }

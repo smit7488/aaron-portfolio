@@ -11,5 +11,12 @@
   "assets": {
     "directory": "./dist/client",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "amkruger.com",
+      "zone_name": "amkruger.com",
+      "custom_domain": true
+    }
+  ]
 }

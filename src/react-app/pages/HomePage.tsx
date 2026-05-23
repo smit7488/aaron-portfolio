@@ -17,12 +17,12 @@ export default function HomePage() {
   const values = [
   {
     title: "Engineering & Problem Solving",
-    text: `I enjoy building and improving mechanical systems through hands-on design, testing, and iteration. Whether it’s CAD modeling, vibration analysis, or prototyping, I like solving real engineering problems and figuring out how to make designs work better in practice.`,
+    text: `I enjoy building and improving mechanical and mechatronic systems through iterative design and testing. I learn best from solving real world engineering problems and figuring out how to improve designs.`,
     icon: FaGear,
   },
   {
     title: "Technical Curiosity",
-    text: `I’m always looking to learn new engineering disciplines andtechnologies. I like understanding how things work and applying that knowledge to projects.`,
+    text: `I’m always looking to learn new engineering disciplines and technologies. I like understanding how things work and applying that knowledge to projects.`,
     icon: FaLightbulb,
   },
   {

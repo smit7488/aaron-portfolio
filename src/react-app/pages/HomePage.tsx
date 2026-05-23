@@ -22,7 +22,7 @@ export default function HomePage() {
   },
   {
     title: "Technical Curiosity",
-    text: `I’m always looking to learn new engineering tools, systems, and technologies. From control systems and FEA to additive manufacturing and machining, I like understanding how things work and applying that knowledge to projects.`,
+    text: `I’m always looking to learn new engineering disciplines andtechnologies. I like understanding how things work and applying that knowledge to projects.`,
     icon: FaLightbulb,
   },
   {
@@ -32,7 +32,7 @@ export default function HomePage() {
   },
   {
     title: "Hands-On Engineering",
-    text: `I like taking projects beyond the computer screen and into real-world testing and fabrication. Whether it’s working with 3D printers, CNC machines, electronics, or prototypes, I enjoy the process of designing, building, and refining systems firsthand.`,
+    text: `I like taking projects beyond the computer screen and into real-world testing and fabrication. Whether it’s working with electrical, mechanical, or mechatronic systems, I enjoy the process of designing, fabricating, and refining projects firsthand.`,
     icon: FaScrewdriverWrench,
   },
 ];
